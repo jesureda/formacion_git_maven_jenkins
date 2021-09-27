@@ -29,15 +29,15 @@
     <div class="navigator-root">
       <div class="navigator-suite-header">
         <span>All suites</span>
-        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
-          <img src="collapseall.gif" class="collapse-all-icon">
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
           </img> <!-- collapse-all-icon -->
         </a> <!-- collapse-all-link -->
       </div> <!-- navigator-suite-header -->
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Formacion" class="navigator-link">
+            <a href="#" class="navigator-link" panel-name="suite-Formacion">
               <span class="suite-name border-passed">Formacion</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
@@ -48,37 +48,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Formacion" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="test-xml-Formacion">
                     <span>C:\Formacion\gitmavenjenkins\formaciongitmavenjenkins-master\src\test\resources\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Formacion" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="testlist-Formacion">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Formacion" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="group-Formacion">
                     <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Formacion" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="times-Formacion">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Formacion" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="reporter-Formacion">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Formacion" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Formacion">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Formacion" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="chronological-Formacion">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -101,13 +101,13 @@
                     </span>
                     <div class="method-list-content passed suite-Formacion">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Formacion" title="testcases.Test2" class="method navigator-link" hash-for-method="test">test</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Formacion" title="testcases.Test1" hash-for-method="test">test</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Formacion" title="testcases.Test1" class="method navigator-link" hash-for-method="test">test</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Formacion" title="testcases.Test2" hash-for-method="test">test</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Formacion -->
@@ -165,13 +165,13 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;1&quot; parallel=&quot;methods&quot; name=&quot;Formacion&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Formacion&quot; parallel=&quot;methods&quot;&gt;
   &lt;groups&gt;
     &lt;run&gt;
       &lt;include name=&quot;MvnTest&quot;/&gt;
     &lt;/run&gt;
   &lt;/groups&gt;
-  &lt;test thread-count=&quot;1&quot; parallel=&quot;methods&quot; name=&quot;tests&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;tests&quot; parallel=&quot;methods&quot;&gt;
     &lt;groups&gt;
       &lt;run&gt;
         &lt;include name=&quot;MvnTest&quot;/&gt;
@@ -234,7 +234,7 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'test')
 data.setCell(0, 2, 'testcases.Test1')
-data.setCell(0, 3, 77);
+data.setCell(0, 3, 66);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'test')
 data.setCell(1, 2, 'testcases.Test2')
@@ -243,7 +243,7 @@ window.suiteTableData['Formacion']= { tableData: data, tableDiv: 'times-div-Form
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 79 ms</span>
+              <span class="suite-total-time">Total running time: 68 ms</span>
               <div id="times-div-Formacion">
               </div> <!-- times-div-Formacion -->
             </div> <!-- times-div -->
@@ -279,7 +279,7 @@ return data;
               <div class="chronological-class-name">testcases.Test2</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">test</span>
-                <span class="method-start">179 ms</span>
+                <span class="method-start">154 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
